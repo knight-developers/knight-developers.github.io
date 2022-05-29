@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@font-face {
+    font-family: 'Aquire';
+    src: url("assets/fonts/Aquire-BW0ox.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary: #111;
+    --secondary: #FFF;
+    --accent: #0080FF;
+}
+
+nav {
+    height: 10vh;
+    background-color: var(--primary);
+}
+
+header {
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+main {
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+footer {
+    padding: 100px 0;
+    background-color: var(--primary);
+}
+
+body > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%);
+    opacity: 0.5;
+}
+
+
+@media screen and (orientation: landscape) {
+    body > img {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        width: 25%;
+        transform: rotate(15deg);
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 24px;
+}
