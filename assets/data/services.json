@@ -1,0 +1,17 @@
+[
+    {
+        "service": "UI Designing",
+        "description": "We craft UI designs  that looks amazing ensuring ease of use and high customer satisfaction",
+        "illustration": "assets/images/illustrations/ui_designing.svg"
+    },
+    {
+        "service": "Web Designing",
+        "description": "We build highly responsive modern functional websites that serves your purpose",
+        "illustration": "assets/images/illustrations/web_designing.svg"
+    },
+    {
+        "service": "Web Development",
+        "description": "We develop customized web applications that meets your every needs",
+        "illustration": "assets/images/illustrations/web_development.svg"
+    }
+]
