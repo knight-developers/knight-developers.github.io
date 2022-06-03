@@ -1,0 +1,22 @@
+[
+    {
+        "platform": "Github",
+        "link": "https://github.com/knight-developers",
+        "iconClasses": "fa-brands fa-github"
+    },
+    {
+        "platform": "Instagram",
+        "link": "https://www.instagram.com/knight_developers",
+        "iconClasses": "fa-brands fa-instagram"
+    },
+    {
+        "platform": "Whatsapp",
+        "link": "https://wa.me/+918281174254",
+        "iconClasses": "fa-brands fa-whatsapp"
+    },
+    {
+        "platform": "Gmail",
+        "link": "mailto: devs.knights@gmail.com",
+        "iconClasses": "fa-regular fa-envelope"
+    }
+]

@@ -44,6 +44,8 @@ a {
 
 h1 {
     color: var(--secondary);
+    font-size: clamp(24pt, 10vw, 60pt);
+    font-weight: 500;
 }
 
 body > * > * {
@@ -193,10 +195,6 @@ header > div {
     align-items: flex-start;
     row-gap: 40px;
 }
-header h1 {
-    font-size: clamp(24pt, 10vw, 60pt);
-    font-weight: 500;
-}
 header span {
     color: var(--secondary);
     font-size: clamp(10pt, 3vw, 30pt);
@@ -231,12 +229,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 85px;
+    row-gap: min(75px, 5vh);
     z-index: 0;
 }
 #services h2 {
     width: 100%;
     color: var(--accent);
+    font-size: min(8vw, 32pt);
     text-align: left;
 }
 #services > div {
@@ -255,11 +254,9 @@ main {
     box-sizing: content-box;
     box-shadow: 0 5px 10px 3px #0003;
 }
-#service article h3 {
+#services h3 {
+    margin-bottom: 10px;
     color: var(--primary);
-}
-#service article p {
-    margin-top: 5%;
 }
 #services article img {
     width: 100%;
@@ -268,8 +265,45 @@ main {
 }
 
 footer {
-    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 100px 5%;
     background-color: var(--primary);
+    color: var(--secondary);
+}
+footer img {
+    width: 50%;
+}
+footer > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: min(100px, 5vh);
+}
+footer span {
+    color: #AAA;
+    font-size: min(5vw, 20pt);
+}
+footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+footer li {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: 400ms;
+}
+footer li:hover, footer li:focus, footer li:active {
+    background-color: var(--primary);
+    box-shadow: 0 0 10px 3px var(--accent);
+}
+footer li i {
+    padding: 15px;
+    display: block;
+    font-size: min(6vw, 24pt);
 }
 
 body > img {
@@ -320,7 +354,7 @@ body > div svg {
     nav ul {
         position: static;
         width: unset;
-        height: unset;
+        height: 100%;
         padding: 0;
         flex-direction: row;
         column-gap: 30px;
@@ -329,7 +363,7 @@ body > div svg {
     }
     nav li {
         width: unset;
-        padding: 0;
+        padding: 10% 0;
         font-family: 'Montserrat', sans-serif;
         font-size: 12pt;
         color: var(--secondary);
@@ -338,7 +372,7 @@ body > div svg {
     header > div {
         row-gap: 25px;
     }
-    header h1 {
+    h1 {
         font-size: clamp(24pt, 6vw, 50pt);
     }
     header span {
@@ -357,11 +391,41 @@ body > div svg {
     #services > div {
         gap: max(25px, 3vh);
     }
+    #services h2 {
+        font-size: min(5vw, 40pt);
+    }
     #services article {
         width: 25%;
         min-width: 300px;
         padding: 3%;
     }
+    
+    footer {
+        flex-direction: row;
+        column-gap: 75px;
+    }
+    footer img {
+        width: 25%;
+        max-width: 400px;
+    }
+    footer > section {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: min(100px, 5vh);
+    }
+    footer span {
+        font-size: min(5vh, 20pt);
+    }
+    footer ul {
+        justify-content: flex-start;
+        align-content: flex-start;
+        column-gap: 3vw;
+    }
+    footer li a {
+        font-size: min(6vh, 24pt);
+    }
+
+
 
     body > img {
         top: 25%;
